@@ -1,0 +1,9 @@
+.navLink {
+    margin-right: 1rem;
+    color: rgb(59 130 246);
+}
+
+.active {
+    font-weight: bold;
+    color: inherit;
+}
