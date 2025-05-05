@@ -1,4 +1,4 @@
-//tutorial-15//
+//tutorial-15 Nested Layouts//
 export default function ProductDetailsLayout({
     children,
 

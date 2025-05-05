@@ -1,5 +1,5 @@
-//tutorial-8//
-//tutorial-10//
+//tutorial-8 Nested Dynamic Routes//
+//tutorial-10 not-found-page//
 import { notFound } from "next/navigation";
 
 export default async function review({params,}:{params:Promise<{productid:string,reviewId:string}>}){

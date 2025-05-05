@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# This project contains Next.js App Router Features
 
-## Getting Started
+## I'm working on these project from this youtube playlist https://www.youtube.com/watch?v=ZjAqacIC_3c&list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI
 
-First, run the development server:
+## File-Based Routing
+- **Nested Routes**: Create hierarchical URLs using folder structure - `/dashboard/settings`
+- **Dynamic Routes**: Use square brackets [param] for dynamic URL segments - `/products/[id]`
+- **Nested Dynamic**: Combine multiple dynamic parameters - `/shop/[category]/[product]`
+- **Route Handlers**: API endpoints using route.js files for server-side logic
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Advanced Routing Patterns
+- **Catch-all Segments**: `[...slug]` captures any number of URL segments - `/docs/guide/getting-started`
+- **Optional Catch-all**: `[[...slug]]` makes catch-all segments optional - `/shop` or `/shop/electronics`
+- **Parallel Routes**: Display multiple pages simultaneously using `@folder` convention
+- **Intercepting Routes**: Override routes for modals with `(..)` syntax
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## File Organization
+- **Not Found Pages**: Custom 404 handling at any route level using `not-found.js`
+- **File Colocation**: Keep components, styles, and tests alongside route files
+- **Private Folders**: Prefix with underscore `_folder` to exclude from routing
+- **Route Grouping**: Organize routes using `(group)` without affecting URL structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Layout System
+- **Layouts**: Shared UI components that wrap child routes and preserve state
+- **Nested Layouts**: Create layout hierarchies that compose from root to leaf
+- **Multiple Root Layouts**: Use route groups to create separate root layouts
+- **Loading States**: Show loading UI using `loading.js` files
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Navigation & Metadata
+- **Link Component**: Client-side navigation with prefetching capabilities
+- **Active Links**: Track current route using `usePathname()` hook
+- **Routing Metadata**: Configure SEO meta tags and social sharing
+- **Dynamic Metadata**: Generate metadata based on route parameters
+- **Title Templates**: Define consistent title patterns across pages
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Data Access
+- **Route Parameters**: Access dynamic segments via `params` object
+- **Search Parameters**: Query strings available through `searchParams`
+- **Server Components**: Fetch data directly in components
+- **Server Actions**: Handle form submissions and mutations

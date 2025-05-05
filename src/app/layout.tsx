@@ -3,7 +3,7 @@ import { Metadata } from "next"
 export const metadata:Metadata = {
   // title: 'Next.js',
 
-  //Tutorial-18//
+  //Tutorial-18 title metadata//
   title:{
     default:"Next.js Tutorial",
     template:"",

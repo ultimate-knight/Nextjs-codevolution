@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./styles.module.css";
 
-//tutorial-20//
+//tutorial-20 Active links//
 const navLinks = [
     { name: "Register", href: "/register" },
     { name: "Login", href: "/login" },

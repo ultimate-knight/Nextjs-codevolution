@@ -1,6 +1,6 @@
-//tutorial-7//
+//tutorial-7 Dynamic routes//
 
-//tutorial 19//
+//tutorial 19 Link component//
 import Link from "next/link"
 export default function user(){
     const productId=100;
